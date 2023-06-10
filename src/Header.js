@@ -5,7 +5,10 @@ function Header() {
   return (
     <header>
       <nav>
-        <img src={logo} className="nav-img"></img>
+        <div className="left-section">
+          <img src={logo} className="nav-img"></img>
+          <h2>React Facts</h2>
+        </div>
         <ul className="nav-items">
           <li>Demo</li>
           <li>Download</li>
