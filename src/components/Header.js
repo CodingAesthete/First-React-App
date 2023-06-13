@@ -1,5 +1,5 @@
 import React from "react";
-import logo from './react.png';
+import logo from '../images/react.png';
 
 function Header() {
   return (
@@ -8,6 +8,7 @@ function Header() {
         <div className="left-section">
           <img src={logo} className="nav-img"></img>
           <h2>React Facts</h2>
+          <h3>2023</h3>
         </div>
         <ul className="nav-items">
           <li>Demo</li>

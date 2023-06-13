@@ -4,7 +4,7 @@ html, body {
 }
 
 header{
-  background-color: rgba(0, 0, 0, 0.80);
+  background-color: rgba(0, 0, 0, 0.90);
   padding: 10px;
 }
 
@@ -18,6 +18,8 @@ nav {
 nav .nav-items {
   list-style-type: none;
   display: flex;
+  flex:1;
+  justify-content: end;
 }
 
 .nav-items li {
@@ -27,29 +29,42 @@ nav .nav-items {
 }
 
 .nav-img{
-  width: 80px;
+  height: 50px;
 }
 
 h2, small{
   padding-left: 20px;
 }
 
-ol li {
+.facts li {
   padding-right: 20px;
   line-height: 22px;
   text-align: justify;
   margin-bottom: 14px;
 }
 
+.facts li::marker {
+  color:rgb(44, 219, 146);
+  font-size:1.3rem;
+}
+
 .left-section {
   display: flex;
+  width: 260px;
   flex-direction: row;
   justify-content: space-between;
-  gap:14px;
+  align-items:center;
 }
+
 
 .left-section h2 {
   color:rgb(122, 219, 236);
+  letter-spacing: -0.01em;
+  font-size:22px;
+}
+
+.left-section h3 {
+  color: rgb(44, 219, 146);
 }
 
 .nav-items li {
@@ -57,6 +72,22 @@ ol li {
 }
 
 body{
-  background-color: rgba(0, 0, 0, 0.90);
-  color: white;;
+  background-color: rgba(0, 0, 0, 0.85);
+  color: white;
+  background-image: url('images/react2.png');
+  background-repeat: no-repeat;
+  background-position:calc(100% + 10rem) calc(100% - 1.6rem);
+  background-size: 22%;
+}
+
+footer small{
+  width:100%;
+  background-color: grey;
+  padding: 10px;
+  bottom: 0px;
+   position: fixed;
+}
+
+.main{
+  width: 86%;
 }
